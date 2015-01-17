@@ -6,8 +6,12 @@ building a working Weblate docker environment
 * fig
 
 ## Usage
+```
 $ cd weblate-docker-fig/run/weblate
 $ fig up
+``` 
 
 ## Configuration
+``` 
 $ vi weblate-docker-fig/run/weblate/var/lib/weblate/settings\_user.py
+``` 
