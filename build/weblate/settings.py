@@ -499,19 +499,20 @@ CRISPY_TEMPLATE_PACK = 'bootstrap3'
 # )
 
 # List of machine translations
-# MACHINE_TRANSLATION_SERVICES = (
-#     'weblate.trans.machine.apertium.ApertiumTranslation',
-#     'weblate.trans.machine.glosbe.GlosbeTranslation',
-#     'weblate.trans.machine.google.GoogleTranslation',
-#     'weblate.trans.machine.google.GoogleWebTranslation',
-#     'weblate.trans.machine.microsoft.MicrosoftTranslation',
-#     'weblate.trans.machine.mymemory.MyMemoryTranslation',
-#     'weblate.trans.machine.opentran.OpenTranTranslation',
-#     'weblate.trans.machine.tmserver.AmagamaTranslation',
-#     'weblate.trans.machine.tmserver.TMServerTranslation',
-#     'weblate.trans.machine.weblatetm.WeblateSimilarTranslation',
-#     'weblate.trans.machine.weblatetm.WeblateTranslation',
-# )
+MACHINE_TRANSLATION_SERVICES = (
+    'weblate.trans.machine.apertium.ApertiumTranslation',
+    'weblate.trans.machine.glosbe.GlosbeTranslation',
+#    'weblate.trans.machine.google.GoogleTranslation',
+    'weblate.trans.machine.google.GoogleWebTranslation',
+#    'weblate.trans.machine.microsoft.MicrosoftTranslation',
+    'weblate.trans.machine.mymemory.MyMemoryTranslation',
+#    'weblate.trans.machine.opentran.OpenTranTranslation',
+    'weblate.trans.machine.tmserver.AmagamaTranslation',
+#    'weblate.trans.machine.tmserver.TMServerTranslation',
+    'weblate.trans.machine.weblatetm.WeblateSimilarTranslation',
+    'weblate.trans.machine.weblatetm.WeblateTranslation',
+)
+
 
 # E-mail address that error messages come from.
 SERVER_EMAIL = USER_SETTINGS['SERVER_EMAIL']
