@@ -12,3 +12,14 @@ db:
 memcached:
   image: memcached
 
+weblate:
+  build: ../../build/weblate
+  links:
+    - db:db
+    - memcached:memcached
+  ports:
+    - 80:8000
+  volumes:
+   - var/lib/weblate:/var/lib/weblate
+   - var/lib/git:/var/lib/git
+
