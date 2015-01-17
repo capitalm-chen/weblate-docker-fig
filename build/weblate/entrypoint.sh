@@ -10,10 +10,17 @@ fi
 if [ ! -e "/var/lib/weblate/settings_user.py" ]
 then
     cp /usr/lib/weblate/weblate/settings_user_default.py /var/lib/weblate/settings_user.py
-    SECRET_KEY=`/usr/lib/weblate/examples/generate-secret-key`
-    sed -i -e "s/'SECRET_KEY'.*/'SECRET_KEY': '$SECRET_KEY',/" /var/lib/weblate/settings_user.py
 fi
 ln -s /var/lib/weblate/settings_user.py /usr/lib/weblate/weblate/settings_user.py
+
+# secret key
+if [ ! -e "/var/lib/weblate/secret_key.py" ]
+then
+    /usr/lib/weblate/examples/generate-secret-key | \
+        sed -e 's/^/SECRET_KEY = "/' -e 's/$/"/' > \
+        /var/lib/weblate/secret_key.py
+fi
+ln -s /var/lib/weblate/secret_key.py /usr/lib/weblate/weblate/secret_key.py
 
 # configure database
 if \
