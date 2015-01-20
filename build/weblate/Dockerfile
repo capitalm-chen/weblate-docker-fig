@@ -26,7 +26,6 @@ ADD settings.py /usr/lib/weblate/weblate/
 ADD settings_user_default.py /usr/lib/weblate/weblate/
 ADD entrypoint.sh /
 ADD run.sh /usr/local/bin/
-VOLUME /var/lib/weblate
 ENTRYPOINT ["/entrypoint.sh"]
 EXPOSE 8000
 CMD ["/usr/local/bin/run.sh"]
