@@ -32,6 +32,6 @@ USER_SETTINGS = {
     'ALLOWED_HOSTS': [],
 
     # Toggle user registeration
-    'REGISTRATION_OPEN' = True
+    'REGISTRATION_OPEN': True
 }
 
