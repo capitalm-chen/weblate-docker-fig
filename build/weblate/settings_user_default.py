@@ -30,5 +30,8 @@ USER_SETTINGS = {
 
     # List of URLs your site is supposed to serve, required since Django 1.5
     'ALLOWED_HOSTS': [],
+
+    # Toggle user registeration
+    'REGISTRATION_OPEN' = True
 }
 

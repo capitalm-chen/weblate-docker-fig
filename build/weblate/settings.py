@@ -178,6 +178,9 @@ TEMPLATE_LOADERS = (
     )),
 )
 
+# Toggle user registeration
+REGISTRATION_OPEN = USER_SETTINGS['REGISTRATION_OPEN']
+
 # Authentication configuration
 AUTHENTICATION_BACKENDS = (
     #'social.backends.google.GoogleOpenId',
