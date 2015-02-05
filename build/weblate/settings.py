@@ -456,9 +456,9 @@ LAZY_COMMITS = True
 OFFLOAD_INDEXING = False
 
 # Translation locking
-AUTO_LOCK = True
-AUTO_LOCK_TIME = 60
-LOCK_TIME = 15 * 60
+AUTO_LOCK = False
+AUTO_LOCK_TIME = 0
+LOCK_TIME = 0
 
 # Render forms using bootstrap
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
