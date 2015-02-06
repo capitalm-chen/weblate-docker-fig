@@ -13,11 +13,25 @@ RUN apt-get update && \
     python-pil \
     python-pip \
     python-whoosh \
-    translate-toolkit
+    gettext \
+    libexttextcat-data \
+    libjs-sphinxdoc \
+    iso-codes \
+    python-beautifulsoup \
+    python-chardet \
+    python-enchant \
+    python-iniparse \
+    python-levenshtein \
+    python-lxml \
+    python-simplejson \
+    python-utidylib \
+    python-vobject \
+    python-xapian
 
 RUN pip install \
     oauthlib \
     python-social-auth \
+    translate-toolkit \
     South \
     https://github.com/SmileyChris/pyuca/archive/master.zip
 
